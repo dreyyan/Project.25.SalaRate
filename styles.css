@@ -1,0 +1,219 @@
+:root {
+    /* 🎨 Core Palette */
+    --color-primary: #4CAF50;   /* Money Green | Main buttons, success states */
+    --color-secondary: #A5D6A7; /* Soft Green | Cards or sections for employee data */
+    --color-accent: #FFEB3B;    /* Golden Yellow | Highlights for key numbers, icons */
+
+    /* ⚪ Neutral / Text Colors */
+    --color-neutral: #F5F5F5;   /* Light Gray | Backgrounds, forms */
+    --color-text: #333333;      /* Dark Gray | Body text, labels */
+    --color-border: #E0E0E0;    /* Medium Gray | Borders, separators */
+
+    /* Optional shades for flexibility */
+    --color-primary-light: #81C784;  /* Lighter green for hover states */
+    --color-primary-dark: #388E3C;   /* Darker green for active states */
+    --color-accent-dark: #FDD835;    /* Slightly darker yellow for emphasis */
+    --spacing: 1rem;
+}
+
+html, body {
+  height: 96%;
+  margin: 0;
+  font-size: 16px;
+}
+
+body {
+    /* Text */
+    font-family: "STIX Two Text", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    color: var(--color-text);
+
+    /* Layout */
+    padding: 4% 4% 0 4%;
+}
+
+.stix-bold {
+  font-weight: 700;
+}
+
+/* CONTAINERS */
+#main-container {
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Dimensions */
+    width: auto;
+    min-height: 80%;
+
+    /* Spacing */
+    padding: 2%;
+
+    /* Appearance */
+    border: 2px solid #333333;
+    background-color: var(--color-neutral);
+}
+
+#title-container {
+    /* Appearance */
+    box-shadow: 0px 0px 40px 1px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    background-color: var(--color-neutral);
+
+    /* Spacing */
+
+    /* Dimensions */
+    width: 26%;
+
+    /* Text */
+    font-size: 2rem;
+
+    /* Layout */
+    text-align: center;
+}
+
+#parent-container {
+    /* Layout */
+    display: flex;
+    justify-content: center;
+
+    /* Spacing */
+
+    /* Appearance */
+
+
+    /* Dimensions */
+    width: 100%;
+    height: 54vh;
+}
+
+#employee-input-form {
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+
+    /* Dimensions */
+    width: 50%;
+    height: 80%;
+
+    /* Spacing */
+    margin: 4% 2%;
+    padding: 1% 2%;
+
+    /* Appearance */
+    box-shadow: 0px 0px 40px 1px rgba(0,0,0,0.1);
+    border-radius: 30px;
+    background-color: var(--color-neutral);
+}
+
+#employee-form {
+    /* Layout */
+    display: flex;
+    justify-content:space-between;
+
+    input {
+        width: 70%;
+        margin-bottom: 4%;
+        outline: none;
+    }
+
+    select {
+        width: 73%;
+        margin-bottom: 4%;
+    }
+}
+
+#employee-form-left-section {
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+
+    /* Dimensions */
+    width: 40%;
+
+}
+
+#employee-form-right-section {
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+
+    /* Dimensions */
+    width: 40%;
+    
+}
+
+#results-display {
+    /* Layout */
+    display: flex;
+
+    /* Dimensions */
+    width: 50%;
+    height: 80%;
+
+    /* Spacing */
+    margin: 4% 2%;
+    padding: 1% 2%;
+    
+    /* Appearance */
+    box-shadow: 0px 0px 40px 1px rgba(0,0,0,0.1);
+    border-radius: 30px;
+    background-color: var(--color-neutral);
+}
+
+#results-display-left-section {
+    /* Dimensions */
+    width: 50%;
+}
+
+#results-display-right-section {
+    /* Dimensions */
+    width: 50%;
+    
+}
+
+#footer {
+    /* Layout */
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    /* Appearance */
+    border: 2px solid black;
+
+    /* Dimensions */
+    width: 100%;
+    height: 8%;
+}
+
+/* BUTTONS */
+#calculate-button {
+    /* Dimensions */
+    width: 20%;
+    height: 60px;
+
+    /* Spacing */
+    margin-top: 2%;
+
+    /* Text */
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-neutral);
+
+    /* Appearance */
+    box-shadow: 0px 0px 40px 4px rgba(0,0,0,0.2);
+    border: 0;
+    border-radius: 30px;
+    background-color: var(--color-primary);
+}
+
+/* TEXT */
+#title {
+    margin: 2% 0 0 0;
+}
