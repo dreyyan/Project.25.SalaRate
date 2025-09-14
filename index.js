@@ -36,6 +36,7 @@ if (selectedDept && departments[selectedDept]) {
   });
 }
 });
+
 // Handle details: Employee
 let employeeName = document.querySelector('#name');
 let employeeID;
@@ -83,3 +84,19 @@ function displayDetails() {
     `;
 }
 
+// Website fade-in animation
+window.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".fade-in");
+    elements.forEach((el, i) => {
+        // Add a slight delay between elements for a stagger effect
+        setTimeout(() => {
+            el.classList.add("visible");
+        }, i * 500); // 150ms delay between elements
+    });
+});
+
+// Prevent page reload
+document.getElementById("employee-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    displayDetails();
+});

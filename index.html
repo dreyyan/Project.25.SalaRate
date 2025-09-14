@@ -13,88 +13,85 @@
 </head>
 <body>
     <script src="index.js" defer></script>                                        <!-- JavaScript -->
-    <main id="main-container">
+    <main id="main-container" class="glassmorphism fade-in">
         <!-- Title -->
-        <div id="title-container">
+        <div id="title-container" class="glassmorphism fade-in">
             <h1 id="title">SalaRate™</h1>
         </div>
 
         <!-- Parent Container -->
         <div id="parent-container">
             <!-- [L]: Employee Input Form -->
-            <div id="employee-input-form">
+            <div id="employee-input-form" class="glassmorphism fade-in">
                 <h2>Employee Salary Form</h2>
 
                 <form id="employee-form">
                     <div id="employee-form-left-section">
                         <!-- [1] Name -->
-                        <label for="name">Name:</label>
+                        <label for="name">Name</label>
                         <input type="text" id="name" name="name" placeholder="Juan de la Cruz" required>
 
-                        <!-- I.D. -->
-                        <label for="id">I.D.:</label>
+                        <!-- [2] I.D. -->
+                        <label for="id">I.D.</label>
                         <input type="text" id="id" name="id" placeholder="AA-000000" required>
 
-                        <!-- [2] # of Working Hours -->
-                        <label for="working-hours"># of Working Hours:</label>
+                        <!-- [3] # of Working Hours -->
+                        <label for="working-hours"># of Working Hours</label>
                         <input type="number" id="working-hours" name="working-hours" min="0" max="180" placeholder="160">
 
-                        <!-- [3] Rate/hr. -->
-                        <label for="rate-per-hour">Rate/hr.:</label>
+                        <!-- [4] Rate/hr. -->
+                        <label for="rate-per-hour">Rate/hr.</label>
                         <input type="number" id="rate-per-hour" name="rate-per-hour" min="0" max="10000" step="0.01" placeholder="₱9999.99">
+                        
                     </div>
 
                     <div id="employee-form-right-section">                        
-                        <!-- Department -->
-                        <label for="department">Department:</label>
+                        <!-- [5] Department -->
+                        <label for="department">Department</label>
                         <select id="department" name="department">
                         <option value="">-- Select Department --</option>
                         </select>
 
-                        <!-- Team -->
-                        <label for="team">Team:</label>
+                        <!-- [6] Team -->
+                        <label for="team">Team</label>
                         <select id="team" name="team">
                         <option value="">-- Select Team --</option>
                         </select>                
 
-                        <!-- Email Address -->
-                        <label for="email-address">Email Address:</label>
+                        <!-- [7] Email Address -->
+                        <label for="email-address">Email Address</label>
                         <input type="text" id="email-address" name="email-address" placeholder="example@domain.com" required>
                         
-                        <!-- Phone No. -->
-                        <label for="phone-number">Phone No.:</label>
+                        <!-- [8] Phone No. -->
+                        <label for="phone-number">Phone No.</label>
                         <input type="number" id="phone-number" name="phone-number" placeholder="09000000000">
                     </div>
                 </form>
             </div>
 
             <!-- [R]: Results Display -->
-            <div id="results-display">
+            <div id="results-display" class="glassmorphism fade-in">
                 <div id="results-display-left-section">
                     <h2>Employee Details</h2>
-                    <p><strong>Name:</strong> Adri</p>
-                    <p><strong>I.D.:</strong> 12345</p>
-                    <p><strong>Department:</strong> Development</p>
-                    <p><strong>Team:</strong> Alpha</p>
-                    <p><strong>Email Address:</strong> adri@example.com</p>
-                    <p><strong>Phone No.:</strong> 09171234567</p>
+                    <p><strong>Name:</strong></p>
+                    <p><strong>I.D.:</strong></p>
+                    <p><strong>Department:</strong></p>
+                    <p><strong>Team:</strong></p>
+                    <p><strong>Email Address:</strong></p>
+                    <p><strong>Phone No.:</strong></p>
                 </div>
                 <div id="results-display-right-section">
                     <h2>Salary Details</h2>
-                    <p><strong>Hours Worked:</strong> Adri</p>
-                    <p><strong>Rate per Hour:</strong> 12345</p>
-                    <p><strong>Total Salary:</strong> ₱ Development</p>
+                    <p><strong>Hours Worked:</strong></p>
+                    <p><strong>Rate per Hour:</strong></p>
+                    <p><strong>Total Salary:</strong></p>
                 </div>
             </div>
         </div>
 
         <!-- BUTTON: Submit -->
-        <button type="submit" id="calculate-button" onclick=displayDetails()>Calculate!</button>
+        <button type="submit" id="calculate-button" class="glassmorphism" onclick=displayDetails()>Calculate!</button>
     </main>
-    <!-- Footer -->
-    <footer id="footer">
-        
-    </footer>
 </div>
 </body>
 </html>
